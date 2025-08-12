@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Prank Aman — Virus Drama</title>
+<style>
+  body {
+    margin: 0;
+    background: black;
+    color: limegreen;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  #message {
+    font-size: 1.4em;
+    white-space: pre-line;
+  }
+  .prank {
+    font-size: 3em;
+    color: red;
+    animation: blink 0.8s infinite;
+  }
+  @keyframes blink {
+    50% {opacity: 0;}
+  }
+</style>
+</head>
+<body>
+  <div id="message">Memindai sistem...\nMendeteksi ancaman...\nHP anda telah TERKENA VIRUS!!!</div>
+
+<script>
+  setTimeout(() => {
+    document.getElementById("message").innerHTML = "<span class='prank'>HAHA PRANK! 😂</span>\nPerangkat Anda 100% aman.";
+    document.body.style.color = "white";
+    document.body.style.background = "darkblue";
+  }, 5000);
+</script>
+</body>
+</html>
